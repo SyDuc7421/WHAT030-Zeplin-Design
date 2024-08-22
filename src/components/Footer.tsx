@@ -1,6 +1,8 @@
-import FacebookIcon from "@/assets/svg/facebook-icon.svg";
-import InstaIcon from "@/assets/svg/instagram-icon.svg";
-import GoogleIcon from "@/assets/svg/google-icon.svg";
+import React from "react";
+
+import NaverIcon from "@/assets/png/naver-icon.png";
+import FacebookIcon from "@/assets/png/facebook-icon.png";
+import InstagramIcon from "@/assets/png/instagram-icon.png";
 
 const contacts: string[] = [
   "©2020-2021 what happened corp",
@@ -61,28 +63,28 @@ export const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-between gap-10 border-t bg-background py-6 text-foreground/70 lg:flex-row">
-        <div className="flex w-1/2 flex-wrap items-center gap-2 text-xs">
-          {contacts.map((item) => (
-            <>
+        <div className="flex w-full flex-wrap items-center gap-2 text-xs lg:w-1/2">
+          {contacts.map((item, index) => (
+            <React.Fragment key={`${item}_${index}`}>
               <span>{item}</span>
               <Separator />
-            </>
+            </React.Fragment>
           ))}
         </div>
         <div className="mr-10 flex items-center gap-4">
           <img
-            src={GoogleIcon}
-            alt="icon google"
+            src={NaverIcon}
+            alt="naver-icon"
             className="h-6 w-6 cursor-pointer object-cover hover:opacity-75"
           />
           <img
             src={FacebookIcon}
-            alt="icon facebook"
+            alt="facebook-icon"
             className="h-6 w-6 object-cover hover:opacity-75"
           />
           <img
-            src={InstaIcon}
-            alt="icon instagram"
+            src={InstagramIcon}
+            alt="instagram-icon"
             className="h-6 w-6 object-cover hover:opacity-75"
           />
         </div>
@@ -101,8 +103,13 @@ const FooterColumn = ({ label, items }: FooterColumnProps) => {
     <div className="flex flex-col items-start justify-between gap-2 text-sm lg:text-base">
       <span className="font-bold">{label}</span>
       <div className="lg flex flex-col items-start gap-1 text-xs">
-        {items.map((item) => (
-          <span className="cursor-pointer hover:underline">{item}</span>
+        {items.map((item, index) => (
+          <span
+            className="cursor-pointer hover:underline"
+            key={`${item}_${index}`}
+          >
+            {item}
+          </span>
         ))}
       </div>
     </div>
