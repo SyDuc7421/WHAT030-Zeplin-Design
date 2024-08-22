@@ -97,7 +97,7 @@ export const LoginForm = () => {
         <Button
           variant="outline"
           className="flex-grow border-2 border-black py-6 font-semibold"
-          onClick={() => navigate("/resiter")}
+          onClick={() => navigate("/register")}
         >
           계정이 없으신가요? 간편가입하기
         </Button>

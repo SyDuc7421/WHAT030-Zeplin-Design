@@ -40,6 +40,12 @@ export const registerSchema = z
     additional_address: z.string().optional(),
 
     contact: z.string().optional(),
+
+    accept_policy: z.boolean({
+      required_error: "Accep policy is required field.",
+    }),
+
+    allow_advertisement: z.boolean().optional(),
   })
   .refine((values) => values.password === values.verify_password, {
     path: ["verify_password"],
