@@ -32,6 +32,7 @@ export const RegsiterForm = () => {
   const onSubmit = (values: registerType) => {
     console.log(values);
   };
+
   return (
     <Form {...form}>
       <form

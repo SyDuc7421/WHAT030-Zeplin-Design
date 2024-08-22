@@ -3,8 +3,11 @@ import { useNavigate } from "react-router-dom";
 export const Headers = () => {
   const navigate = useNavigate();
   return (
-    <div className="sticky top-0 flex h-fit w-full items-center justify-between bg-black p-4 text-white lg:p-5">
-      <span className="cursor-pointer text-xl font-semibold hover:opacity-75 md:text-xl lg:text-2xl">
+    <div className="sticky top-0 z-50 flex h-fit w-full items-center justify-between bg-black p-4 text-white lg:p-5">
+      <span
+        className="cursor-pointer text-xl font-semibold hover:opacity-75 md:text-xl lg:text-2xl"
+        onClick={() => navigate("/main")}
+      >
         What Happened
       </span>
       <div className="flex items-center gap-4 md:gap-6">

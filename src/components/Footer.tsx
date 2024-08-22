@@ -75,17 +75,17 @@ export const Footer = () => {
           <img
             src={NaverIcon}
             alt="naver-icon"
-            className="h-6 w-6 cursor-pointer object-cover hover:opacity-75"
+            className="h-7 w-7 cursor-pointer object-cover hover:opacity-75"
           />
           <img
             src={FacebookIcon}
             alt="facebook-icon"
-            className="h-6 w-6 object-cover hover:opacity-75"
+            className="h-7 w-7 object-cover hover:opacity-75"
           />
           <img
             src={InstagramIcon}
             alt="instagram-icon"
-            className="h-6 w-6 object-cover hover:opacity-75"
+            className="h-7 w-7 object-cover hover:opacity-75"
           />
         </div>
       </div>
