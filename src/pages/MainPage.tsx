@@ -1,6 +1,7 @@
 import { BestProductBanner } from "@/components/landing/BestProductBanner";
 import { BrandStory } from "@/components/landing/BrandStory";
 import { Introduction } from "@/components/landing/Introduction";
+import { Issue } from "@/components/landing/Issue";
 import { Main } from "@/components/landing/Main";
 import { MainBanner } from "@/components/landing/MainBanner";
 
@@ -12,6 +13,7 @@ export const MainPage = () => {
       <BestProductBanner />
       <Main />
       <BrandStory />
+      <Issue />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 
 import WindowImage from "@/assets/materials/window.png";
 import ObjectOneImage from "@/assets/materials/object-01.png";

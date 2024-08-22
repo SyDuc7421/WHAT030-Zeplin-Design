@@ -1,5 +1,5 @@
 import { Heart } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 
 import ImageOne from "@/assets/materials/img-01.png";
 import ImageTwo from "@/assets/materials/img-02.png";
