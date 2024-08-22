@@ -1,5 +1,5 @@
 import ItemOneImage from "@/assets/materials/best-image-01.png";
-import ItemTwoImage from "@/assets/materials/best-image-02.webp";
+import ItemTwoImage from "@/assets/materials/best-image-02.png";
 import ItemThreeImage from "@/assets/materials/best-image-03.png";
 
 const sample_data = [
