@@ -1,13 +1,16 @@
 import { MoveRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 import NewImageOne from "@/assets/materials/news-img-03.png";
 import NewImageTwo from "@/assets/materials/news-img-04.png";
 import NewImageThree from "@/assets/materials/news-img-05.png";
 import NewImageFour from "@/assets/materials/news-img-04.png";
-import NewObjectOne from "@/assets/materials/news-object-02.png";
-import NewObjectTwo from "@/assets/materials/news-object-03.png";
-import { cn } from "@/lib/utils";
+import NewObjectOne from "@/assets/materials/news-object-01.png";
+import NewObjectTwo from "@/assets/materials/news-object-02.png";
+import NewObjectThree from "@/assets/materials/news-object-03.png";
+import NewObjectFour from "@/assets/materials/news-object-04.png";
+import NewObjectFive from "@/assets/materials/news-object-05.png";
 
 const sample_data = [
   {
@@ -33,12 +36,12 @@ export const Issue = () => {
     <div className="relative flex w-full flex-col items-center gap-10 bg-[rgb(252,212,38)] py-20 text-black">
       <div className="absolute right-16 top-16 flex flex-col items-end gap-8">
         <img
-          src={NewObjectOne}
+          src={NewObjectTwo}
           alt="dice-object1"
           className="w-[90px] object-cover"
         />
         <img
-          src={NewObjectTwo}
+          src={NewObjectThree}
           alt="dice-object2"
           className="w-[100px] object-cover"
         />
@@ -61,13 +64,30 @@ export const Issue = () => {
         </Button>
       </div>
       <div className="my-8 flex items-stretch justify-between">
-        <div className="flex h-[480px] w-full max-w-[350px] flex-1 flex-col items-center justify-around gap-12 border-2 border-black bg-[rgb(255,84,0)] p-12">
+        <div className="relative flex h-[480px] w-full max-w-[350px] flex-1 flex-col items-center justify-around gap-12 border-2 border-black bg-[rgb(255,84,0)] p-12">
           <span className="w-1/2 text-2xl font-bold uppercase md:text-4xl lg:text-5xl">
             whpn issue
           </span>
           <div className="border-8 border-black bg-white p-4">
             <MoveRight className="h-20 w-20" />
           </div>
+          <img
+            src={NewObjectOne}
+            alt="new-object1"
+            className="absolute bottom-0 right-0 -mb-20 -me-8 w-[120px]"
+          />
+
+          <img
+            src={NewObjectFour}
+            alt="new-object4"
+            className="absolute right-0 top-0 -me-[100px] -mt-5 w-[100px]"
+          />
+
+          <img
+            src={NewObjectFive}
+            alt="new-object1"
+            className="absolute bottom-0 right-0 -mb-10 -me-[800px] w-[100px]"
+          />
         </div>
         {sample_data.map((item, index) => (
           <BrandItem
