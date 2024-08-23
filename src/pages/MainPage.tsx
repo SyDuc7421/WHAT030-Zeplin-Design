@@ -4,7 +4,7 @@ import { Introduction } from "@/components/landing/Introduction";
 import { Issue } from "@/components/landing/Issue";
 import { Main } from "@/components/landing/Main";
 import { MainBanner } from "@/components/landing/MainBanner";
-import { Video } from "@/components/landing/Prototype";
+import { Video } from "@/components/landing/Video";
 
 export const MainPage = () => {
   return (

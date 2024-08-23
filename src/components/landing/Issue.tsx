@@ -34,7 +34,7 @@ const sample_data = [
 export const Issue = () => {
   return (
     <div className="relative flex w-full flex-col items-center gap-10 bg-[rgb(252,212,38)] py-20 text-black">
-      <div className="absolute right-16 top-16 flex flex-col items-end gap-8">
+      <div className="absolute right-16 top-16 hidden flex-col items-end gap-8 lg:flex">
         <img
           src={NewObjectTwo}
           alt="dice-object1"
@@ -64,29 +64,30 @@ export const Issue = () => {
         </Button>
       </div>
       <div className="my-8 flex items-stretch justify-between">
-        <div className="relative flex h-[480px] w-full max-w-[350px] flex-1 flex-col items-center justify-around gap-12 border-2 border-black bg-[rgb(255,84,0)] p-12">
+        <div className="relative hidden w-full max-w-[350px] flex-1 flex-col items-center justify-around gap-12 border-2 border-black bg-[rgb(255,84,0)] p-12 lg:flex lg:h-[480px]">
           <span className="w-1/2 text-2xl font-bold uppercase md:text-4xl lg:text-5xl">
             whpn issue
           </span>
           <div className="border-8 border-black bg-white p-4">
             <MoveRight className="h-20 w-20" />
           </div>
+          {/* absolute object */}
           <img
             src={NewObjectOne}
             alt="new-object1"
-            className="absolute bottom-0 right-0 -mb-20 -me-8 w-[120px]"
+            className="absolute bottom-0 right-0 -mb-20 -me-8 hidden w-[120px] lg:block"
           />
 
           <img
             src={NewObjectFour}
             alt="new-object4"
-            className="absolute right-0 top-0 -me-[100px] -mt-5 w-[100px]"
+            className="absolute right-0 top-0 -me-[100px] -mt-5 hidden w-[100px] lg:block"
           />
 
           <img
             src={NewObjectFive}
             alt="new-object1"
-            className="absolute bottom-0 right-0 -mb-10 -me-[800px] w-[100px]"
+            className="absolute bottom-0 right-0 -mb-10 -me-[800px] hidden w-[100px] lg:block"
           />
         </div>
         {sample_data.map((item, index) => (
@@ -110,7 +111,7 @@ interface BrandItemProps {
 
 const BrandItem = ({ label, img_url, odd }: BrandItemProps) => {
   return (
-    <div className="flex h-[480px] w-full max-w-[350px] flex-1 flex-col items-center border-2 border-black">
+    <div className="flex w-full max-w-[350px] flex-1 flex-col items-center border-2 border-black lg:h-[480px]">
       <div
         className={cn(
           "w-full flex-grow p-3 text-center text-xl font-bold text-white md:text-2xl lg:text-3xl",
@@ -122,7 +123,7 @@ const BrandItem = ({ label, img_url, odd }: BrandItemProps) => {
       <img
         src={img_url}
         alt={label}
-        className="aspect-[5/6] max-w-[350px] flex-grow object-cover"
+        className="aspect-[5/6] w-full max-w-[350px] flex-grow object-cover"
       />
     </div>
   );

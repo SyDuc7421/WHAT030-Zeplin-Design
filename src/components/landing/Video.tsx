@@ -33,65 +33,66 @@ export const Video = () => {
       <img
         src={VideoImage}
         alt="video-image"
-        className="z-40 mb-[200px] w-full max-w-[1200px] object-cover"
+        className="z-40 w-full max-w-[1200px] object-cover p-4 lg:mb-[200px]"
       />
 
       {/* absolute object */}
-
-      <img
-        src={VideoObjectOne}
-        alt="video-object1"
-        className="absolute bottom-10 left-1/4 w-[350px] object-cover"
-      />
-
-      <img
-        src={VideoObjectTwo}
-        alt="video-object2"
-        className="absolute bottom-36 left-[60%] w-[75px] object-cover"
-      />
-
-      <img
-        src={VideoObjectThree}
-        alt="video-object3"
-        className="absolute bottom-[200px] left-[17%] w-[120px] object-cover"
-      />
-
-      <img
-        src={VideoObjectFour}
-        alt="video-object4"
-        className="absolute left-0 top-1/2 -ms-[150px] w-[400px] -translate-y-1/2 object-cover"
-      />
-
-      <img
-        src={VideoObjectFive}
-        alt="video-object5"
-        className="absolute left-[15%] top-0 w-[120px] object-cover"
-      />
-
-      <div className="absolute right-20 top-20 flex flex-col">
+      <div className="hidden h-full w-full lg:block">
         <img
-          src={VideoObjectSeven}
-          alt="video-object7"
-          className="w-[120px] object-cover"
+          src={VideoObjectOne}
+          alt="video-object1"
+          className="absolute bottom-10 left-1/4 w-[350px] object-cover"
         />
+
         <img
-          src={VideoObjectSix}
-          alt="video-object6"
-          className="-ms-16 -mt-10 w-[100px] object-cover"
+          src={VideoObjectTwo}
+          alt="video-object2"
+          className="absolute bottom-36 left-[60%] w-[75px] object-cover"
+        />
+
+        <img
+          src={VideoObjectThree}
+          alt="video-object3"
+          className="absolute bottom-[200px] left-[17%] w-[120px] object-cover"
+        />
+
+        <img
+          src={VideoObjectFour}
+          alt="video-object4"
+          className="absolute left-0 top-1/2 -ms-[150px] w-[400px] -translate-y-1/2 object-cover"
+        />
+
+        <img
+          src={VideoObjectFive}
+          alt="video-object5"
+          className="absolute left-[15%] top-0 w-[120px] object-cover"
+        />
+
+        <div className="absolute right-20 top-20 flex flex-col">
+          <img
+            src={VideoObjectSeven}
+            alt="video-object7"
+            className="w-[120px] object-cover"
+          />
+          <img
+            src={VideoObjectSix}
+            alt="video-object6"
+            className="-ms-16 -mt-10 w-[100px] object-cover"
+          />
+        </div>
+
+        <img
+          src={VideoObjectEight}
+          alt="video-object8"
+          className="absolute right-0 top-1/2 z-20 -me-[100px] w-[500px] object-cover"
+        />
+
+        <img
+          src={VideoObjectNine}
+          alt="video-object9"
+          className="absolute right-0 top-[45%] z-10 -me-[80px] w-[250px] -translate-y-1/2 object-cover"
         />
       </div>
-
-      <img
-        src={VideoObjectEight}
-        alt="video-object8"
-        className="absolute right-0 top-1/2 z-20 -me-[100px] w-[500px] object-cover"
-      />
-
-      <img
-        src={VideoObjectNine}
-        alt="video-object9"
-        className="absolute right-0 top-[45%] z-10 -me-[80px] w-[250px] -translate-y-1/2 object-cover"
-      />
     </div>
   );
 };

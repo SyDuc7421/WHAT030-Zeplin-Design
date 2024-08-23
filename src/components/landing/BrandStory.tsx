@@ -22,17 +22,17 @@ export const BrandStory = () => {
           걸음을 내딛어보세요. 비디오를 단 몇 분 만에 제작해보세요.
         </span>
 
-        <div className="relative z-40 mt-6 w-full max-w-[1200px]">
+        <div className="relative z-40 mt-6 flex w-full max-w-[1200px] flex-col items-center">
           <img
             src={WindowImage}
             alt="window-image"
-            className="max-w-[1200px] object-cover"
+            className="hidden max-w-[1200px] object-cover lg:block"
           />
-          <div className="absolute left-1/2 top-1/2 flex -translate-y-1/2 flex-col items-start gap-7 ps-5 text-black">
+          <div className="flex flex-col gap-7 p-8 text-black lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:items-start lg:ps-5">
             <span className="text-xl font-bold uppercase md:text-2xl">
               What Happened’s Brand story
             </span>
-            <span className="w-4/5">
+            <span className="lg:w-4/5">
               청춘이 있는 바이며, 말이다. 같지 노년에게서 어디 모래뿐일 무엇을
               풀이 옷을 봄바람이다. 새 천고에 놀이 내는 찾아 창공에 광야에서
               살았으며, 듣는다. 수 있는 긴지라 사는가 낙원을 웅대한 아니다. 내는
@@ -42,34 +42,34 @@ export const BrandStory = () => {
             </span>
             <Button
               variant="outline"
-              className="border-2 border-black p-6 px-8 text-xl font-bold uppercase"
+              className="max-w-[200px] self-center border-2 border-black p-6 px-8 text-xl font-bold uppercase"
             >
               See more
             </Button>
           </div>
         </div>
 
-        <div className="absolute left-0 top-1/2 flex -translate-y-1/2 flex-col items-end">
+        <div className="absolute left-0 top-1/2 hidden -translate-y-1/2 flex-col items-end lg:flex">
           <img
             src={ObjectOneImage}
             alt="note1-image"
-            className="w-[144px] object-cover"
+            className="w-full max-w-[144px] object-cover"
           />
           <div className="flex items-end gap-0">
             <img
               src={ObjectSixImage}
               alt="book6-image"
-              className="w-[164px] object-cover"
+              className="w-full max-w-[164px] object-cover"
             />
             <img
               src={ObjectSevenImage}
               alt="book7-image"
-              className="w-[140px] object-cover"
+              className="w-full max-w-[140px] object-cover"
             />
           </div>
         </div>
 
-        <div className="absolute right-[80px] top-5 flex flex-col gap-0">
+        <div className="right-[80px] top-5 hidden flex-col gap-0 lg:absolute lg:flex">
           <img
             src={ObjectTwoImage}
             alt="note2-image"
@@ -82,7 +82,7 @@ export const BrandStory = () => {
           />
         </div>
 
-        <div className="absolute right-0 top-[30%] flex items-end gap-0">
+        <div className="right-0 top-[30%] hidden items-end gap-0 lg:absolute lg:flex">
           <img
             src={ObjectFiveImage}
             alt="calendar5-image"

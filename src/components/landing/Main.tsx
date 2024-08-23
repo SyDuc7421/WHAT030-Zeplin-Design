@@ -134,11 +134,11 @@ interface MainItemProps {
 
 const MainItem = ({ label, price, img_url, favorites }: MainItemProps) => {
   return (
-    <div className="flex aspect-[3/4] w-[300px] flex-col gap-3">
+    <div className="flex aspect-[3/4] max-w-[300px] flex-col gap-3">
       <img
         src={img_url}
         alt={label}
-        className="h-[300px] w-[300px] cursor-pointer object-cover"
+        className="aspect-square max-h-[300px] w-full max-w-[300px] cursor-pointer object-cover"
       />
       <span className="cursor-pointer font-bold">{label}</span>
       <div className="flex items-center justify-between">

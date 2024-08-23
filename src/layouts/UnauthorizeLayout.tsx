@@ -5,7 +5,7 @@ import { Headers } from "@/components/Headers";
 
 export default function UnauthorizeLayout() {
   return (
-    <div className="w-full bg-background text-foreground">
+    <div className="mt-[64px] w-full overflow-x-hidden bg-background text-foreground">
       <Headers />
       <Outlet />
       <Footer />
