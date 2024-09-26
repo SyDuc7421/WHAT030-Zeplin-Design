@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <ScrollRestoration
-        getKey={(location, matches) => {
+        getKey={(location) => {
           // default behavior
           return location.key;
         }}
