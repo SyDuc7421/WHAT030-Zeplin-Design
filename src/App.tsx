@@ -2,6 +2,7 @@ import {
   createBrowserRouter,
   Navigate,
   RouterProvider,
+  ScrollRestoration,
 } from "react-router-dom";
 
 import UnauthorizeLayout from "./layouts/UnauthorizeLayout";
@@ -38,6 +39,12 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
+      <ScrollRestoration
+        getKey={(location, matches) => {
+          // default behavior
+          return location.key;
+        }}
+      />
       <RouterProvider router={router} />
     </>
   );
